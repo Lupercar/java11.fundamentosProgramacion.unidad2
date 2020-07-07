@@ -1,0 +1,37 @@
+Hay que crear una clase llamada Juego con las siguientes características:
+
+• Propiedades (con sus métodos get y set correspondientes):
+
+nombre: Un string con el nombre del jugador.
+
+vidas: Un entero que indica el número de vidas que le quedan al jugador en la partida actual.
+
+duracion: Un valor que indica la duración máxima del juego en segundos.
+
+• Métodos
+
+Un método constructor que acepta un parámetro de tipo entero que indica el número de vidas iniciales con las que parte el jugador y la duración máxima del juego.
+
+Al crearse un objeto Juego se debe guardar la fecha actual del sistema para determinar después durante cuánto tiempo se ha jugado. Se puede obtener la fecha y hora actual del sistema con:
+
+System.currentTimeMillis() – devuelve la fecha y hora como un valor de los mili segundos totales.
+
+LocalDateTime.now() – devuelve un objeto LocalDateTime que posee propiedades para obtener cada valor de fecha y hora.
+
+Un método finJuego() que va a establecer la finalización del juego. De momento este método debe guardar la fecha actual del sistema como momento de finalización del juego.
+
+Un método isTimeout() que devuelva true si el jugador ha excedido la duración máxima del juego, y false en caso contrario.
+
+En el método main() del programa hay que hacer lo siguiente:
+
+• Crea una instancia de la clase Juego indicando que su jugador es "Juan", el número de vidas es 5, y la duración máxima es de 1 minuto y 3 segundos.
+
+• Utiliza el método getVidas() del objeto creado para mostrar en pantalla cuántas vidas le quedan al jugador.
+
+• Resta una vida y vuelve a mostrar en pantalla cuántas vidas le quedan al jugador.
+
+• Crea otra instancia de la clase Juego indicando que su jugador es "Marta", el número de vidas es también de 5, y la duración máxima es de 53 segundos.
+
+• Muestras las vidas que le quedan a "Marta" y a "Juan".
+
+• Finaliza el primer juego, y después muestra un mensaje indicando si el jugador se excedió de tiempo o no.
